@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8' />
+    <meta meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML-DOM練習</title><!--JavaScript-HTML-DOM練習2022.10.04-->
+</head>
+
+<body>
+<script>
+
+//先來認識內建的 window 物件 (HTML DOM 的結構最上層!)
+console.log(window);
+
+//取得瀏覽器視窗的高與寬度數字
+console.log(window.innerHeight , innerWidth);
+
+//取得我本身顯示器螢幕的寬與高
+console.log(window.screen.width , window.screen.height);
+
+//取得檔案路徑位置(網址列的內容)
+console.log(window.location.href);
+
+// //可以更改網址列內容(這樣就是整個跳轉網頁)
+// window.location.href = "https://www.pixiv.net/"
+
+//認識 document 物件
+console.log(window.document); //這個打開是會很像html的介面
+console.dir(document); //這是比較程式化的呈現方式，我們比較需要這個
+
+
+//取得網頁的標題(最上方頁籤那個)
+console.log(document.title);
+//更改網頁的標題 感覺可以這樣來改week-1作業的標題
+document.title = "全新HTML-DOM練習"; 
+//這邊會發現還是能印出舊標題在log上，如果想印新的再印一次即可，因為原有的標題我們沒動。
+
+//取得body標籤
+console.log(document.body);
+//更改網頁主畫面的內容 (更改 body 的內文)
+console.log(document.body.innerHTML);
+
+//讓網頁的 body 真正有顯示東西
+document.body.innerHTML = "真的有東西"
+
+//但是作業不可以使用innerHTML我的老天
+
+
+
+</script>
+</body>
+</html>
